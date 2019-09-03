@@ -1,0 +1,18 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql": {
+    "host": "sendasinventario.cfxb4xmduaoi.us-west-2.rds.amazonaws.com",
+    "port": 3306,
+    "database": "ppo_development",
+    "password": "PlanillaChile-00p",
+    "name": "mysql",
+    "user": "planilla_dev",
+    "connector": "memory",
+    "maxDepthOfQuery": 16,
+    "maxDepthOfData": 32
+  }
+}
+

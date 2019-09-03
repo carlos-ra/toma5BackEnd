@@ -1,0 +1,48 @@
+{
+    "name": "pregunta",
+    "plural": "preguntas",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "tipo": {
+      "type": "number",
+      "required": true
+      },
+      "pregunta": {
+        "type": "number",
+        "required": true
+      },
+      "mensaje_si": {
+        "type": "string",
+        "required": false
+      },
+      "mensaje_no": {
+        "type": "string",
+        "required": false
+      },
+      "mensaje": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "validations": [],
+    "relations": {
+      "pregunta": {
+        "type": "belongsTo",
+        "model": "preguntas",
+        "foreignKey": "id_pregunta"
+      }
+    },
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "DENY"
+      }
+    ],
+    "methods": {}
+  }
+  

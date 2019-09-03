@@ -1,0 +1,36 @@
+{
+    "name": "usuario",
+    "plural": "usuarios",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "nombre": {
+      "type": "string",
+      "required": true
+      },
+      "cedula": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+        "usuario": {
+            "type": "belongsTo",
+            "model": "usuarios",
+            "foreignKey": "id_usuario"
+          }
+    },
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "DENY"
+      }
+    ],
+    "methods": {}
+  }
+  

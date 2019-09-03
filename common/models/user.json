@@ -1,0 +1,79 @@
+{
+  "name": "users",
+  "base": "User",
+  "inheritAcls": false,
+  "properties": {
+    "realm": false,
+    "emailVerified": false,
+    "verificationToken": false,
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "id_rol": {
+      "type": "number",
+      "required": true
+    },
+    "id_locacion": {
+      "type": "number",
+      "required": false
+    },
+    "area_servicio": {
+      "type": "string",
+      "required": false
+    },
+    "id_contratista": {
+      "type": "number",
+      "required": false
+    },
+    "delegaciones": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "role": {
+      "type": "belongsTo",
+      "model": "roles",
+      "foreignKey": "id_rol"
+    },
+    "js_programa": {
+      "type": "hasMany",
+      "model": "programa",
+      "foreignKey": "id_js_asignado"
+    },
+    "gp_programa": {
+      "type": "hasMany",
+      "model": "programa",
+      "foreignKey": "id_gp_asignado"
+    },
+    "eecc_programa": {
+      "type": "hasMany",
+      "model": "programa",
+      "foreignKey": "id_eecc_asignado"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "reset"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

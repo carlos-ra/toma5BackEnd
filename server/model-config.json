@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "roles": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "users": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "encuesta": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "usuario": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "item_lista": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "entrada": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "localizacion": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "pregunta": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "respuesta": {
+    "dataSource": "mysql",
+    "public": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "entrada",
+    "plural": "entradas",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "id_usuario": {
+      "type": "number",
+      "required": true
+      },
+      "id_encuesta": {
+        "type": "number",
+        "required": true
+      },
+      "fecha": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+      "entrada": {
+        "type": "belongsTo",
+        "model": "entradas",
+        "foreignKey": "id_entrada"
+      }
+    },
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "DENY"
+      }
+    ],
+    "methods": {}
+  }
+  

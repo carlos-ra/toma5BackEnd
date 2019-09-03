@@ -1,0 +1,24 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer"
+  },
+  "loopback-component-auto-migrate": {
+    "enabled": true,
+    "raiseError": false,
+    "migration": "auto-update",
+    "models": [
+      "encuesta",
+      "usuario",
+      "item_lista",
+      "entrada",
+      "pregunta",
+      "localizacion",
+      "pregunta",
+      "item_lista",
+      "respuesta",
+      "roles",
+      "users"
+    ],
+    "fixtures": "./test/fixtures/"
+  }
+}

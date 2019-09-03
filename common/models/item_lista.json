@@ -1,0 +1,36 @@
+{
+    "name": "item_lista",
+    "plural": "items_lista",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "id_pregunta": {
+      "type": "number",
+      "required": true
+      },
+      "pregunta": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {
+      "item_lista": {
+        "type": "belongsTo",
+        "model": "items_lista",
+        "foreignKey": "id_item"
+      }
+    },
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "DENY"
+      }
+    ],
+    "methods": {}
+  }
+  

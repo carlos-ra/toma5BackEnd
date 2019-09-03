@@ -1,0 +1,26 @@
+{
+    "name": "localizacion",
+    "plural": "localizaciones",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "nombre": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "DENY"
+      }
+    ],
+    "methods": {}
+  }
+  

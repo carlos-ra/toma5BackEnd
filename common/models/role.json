@@ -1,0 +1,22 @@
+{
+  "name": "roles",
+  "base": "Role",
+  "idInjection": true,
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "hasMany",
+      "model": "users",
+      "foreignKey": "id_rol"
+    }
+  },
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

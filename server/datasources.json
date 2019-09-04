@@ -4,13 +4,13 @@
     "connector": "memory"
   },
   "mysql": {
-    "host": "sendasinventario.cfxb4xmduaoi.us-west-2.rds.amazonaws.com",
+    "host": "us-cdbr-iron-east-02.cleardb.net",
     "port": 3306,
-    "database": "ppo_development",
-    "password": "PlanillaChile-00p",
+    "database": "heroku_38a13facab3c4ea",
+    "password": "b7d743e1",
     "name": "mysql",
-    "user": "planilla_dev",
-    "connector": "memory",
+    "user": "bd8fd683b79cad",
+    "connector": "mysql",
     "maxDepthOfQuery": 16,
     "maxDepthOfData": 32
   }

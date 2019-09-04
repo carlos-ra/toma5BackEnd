@@ -18,9 +18,9 @@
     },
     "validations": [],
     "relations": {
-        "encuesta": {
-            "type": "belongsTo",
-            "model": "encuestas",
+        "preguntas": {
+            "type": "hasMany",
+            "model": "pregunta",
             "foreignKey": "id_encuesta"
           }
     },

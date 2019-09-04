@@ -8,11 +8,11 @@
     },
     "properties": {
       "tipo": {
-      "type": "number",
+      "type": "string",
       "required": true
       },
       "pregunta": {
-        "type": "number",
+        "type": "string",
         "required": true
       },
       "mensaje_si": {
@@ -26,13 +26,21 @@
       "mensaje": {
         "type": "string",
         "required": false
+      },
+      "orden": {
+        "type": "number",
+        "required": false
+      },
+      "id_encuesta": {
+        "type": "number",
+        "required": false
       }
     },
     "validations": [],
     "relations": {
-      "pregunta": {
-        "type": "belongsTo",
-        "model": "preguntas",
+      "items": {
+        "type": "hasMany",
+        "model": "item_lista",
         "foreignKey": "id_pregunta"
       }
     },

@@ -13,22 +13,6 @@
     "id_rol": {
       "type": "number",
       "required": true
-    },
-    "id_locacion": {
-      "type": "number",
-      "required": false
-    },
-    "area_servicio": {
-      "type": "string",
-      "required": false
-    },
-    "id_contratista": {
-      "type": "number",
-      "required": false
-    },
-    "delegaciones": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
@@ -37,21 +21,6 @@
       "type": "belongsTo",
       "model": "roles",
       "foreignKey": "id_rol"
-    },
-    "js_programa": {
-      "type": "hasMany",
-      "model": "programa",
-      "foreignKey": "id_js_asignado"
-    },
-    "gp_programa": {
-      "type": "hasMany",
-      "model": "programa",
-      "foreignKey": "id_gp_asignado"
-    },
-    "eecc_programa": {
-      "type": "hasMany",
-      "model": "programa",
-      "foreignKey": "id_eecc_asignado"
     }
   },
   "acls": [

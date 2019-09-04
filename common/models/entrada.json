@@ -16,7 +16,7 @@
         "required": true
       },
       "fecha": {
-        "type": "number",
+        "type": "date",
         "required": true
       }
     },

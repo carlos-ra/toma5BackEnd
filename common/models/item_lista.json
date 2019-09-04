@@ -18,10 +18,10 @@
     },
     "validations": [],
     "relations": {
-      "item_lista": {
+      "pregunta": {
         "type": "belongsTo",
-        "model": "items_lista",
-        "foreignKey": "id_item"
+        "model": "pregunta",
+        "foreignKey": "id_pregunta"
       }
     },
     "acls": [

@@ -8,8 +8,8 @@
     },
     "properties": {
       "id_pregunta": {
-      "type": "number",
-      "required": true
+        "type": "number",
+        "required": true
       },
       "pregunta": {
         "type": "string",
@@ -18,7 +18,7 @@
     },
     "validations": [],
     "relations": {
-      "pregunta": {
+      "preguntaPadre": {
         "type": "belongsTo",
         "model": "pregunta",
         "foreignKey": "id_pregunta"

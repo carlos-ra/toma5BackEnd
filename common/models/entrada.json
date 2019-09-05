@@ -22,11 +22,7 @@
     },
     "validations": [],
     "relations": {
-      "entrada": {
-        "type": "belongsTo",
-        "model": "entradas",
-        "foreignKey": "id_entrada"
-      }
+      
     },
     "acls": [
       {

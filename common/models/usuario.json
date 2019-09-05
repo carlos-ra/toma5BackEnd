@@ -18,11 +18,7 @@
     },
     "validations": [],
     "relations": {
-        "usuario": {
-            "type": "belongsTo",
-            "model": "usuarios",
-            "foreignKey": "id_usuario"
-          }
+        
     },
     "acls": [
       {

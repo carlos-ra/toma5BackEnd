@@ -18,7 +18,16 @@
     },
     "validations": [],
     "relations": {
-        
+      "localizacion": {
+        "type": "hasMany",
+        "model": "localizacion",
+        "foreignKey": "id_localizacion"
+      },
+      "entrada": {
+        "type": "hasMany",
+        "model": "entrada",
+        "foreignKey": "id_usuario"
+      }
     },
     "acls": [
       {

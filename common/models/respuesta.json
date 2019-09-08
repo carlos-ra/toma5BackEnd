@@ -25,7 +25,13 @@
       }
     },
     "validations": [],
-    "relations": {},
+    "relations": {
+      "pregunta": {
+        "type": "belongsTo",
+        "model": "pregunta",
+        "foreignKey": "id_pregunta"
+      }
+    },  
     "acls": [
       {
         "principalType": "ROLE",

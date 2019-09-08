@@ -15,6 +15,10 @@
         "type": "number",
         "required": true
       },
+      "id_localizacion": {
+        "type": "number",
+        "required": true
+      },
       "fecha": {
         "type": "date",
         "required": true
@@ -22,7 +26,21 @@
     },
     "validations": [],
     "relations": {
-      
+      "usuario": {
+        "type": "belongsTo",
+        "model": "usuario",
+        "foreignKey": "id_usuario"
+      },
+      "encuesta": {
+        "type": "hasMany",
+        "model": "encuesta",
+        "foreignKey": "id_encuesta"
+      },
+      "localizacion": {
+        "type": "hasMany",
+        "model": "localizacion",
+        "foreignKey": "id_localizacion"
+      }
     },
     "acls": [
       {

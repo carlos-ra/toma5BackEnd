@@ -38,10 +38,15 @@
     },
     "validations": [],
     "relations": {
-      "items": {
+      "item_lista": {
         "type": "hasMany",
         "model": "item_lista",
         "foreignKey": "id_pregunta"
+      },
+      "encuesta": {
+        "type": "belongsTo",
+        "model": "encuesta",
+        "foreignKey": "id_encuesta"
       }
     },
     "acls": [

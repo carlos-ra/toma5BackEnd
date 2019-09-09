@@ -32,12 +32,12 @@
         "foreignKey": "id_usuario"
       },
       "encuesta": {
-        "type": "hasMany",
+        "type": "belongsTo",
         "model": "encuesta",
         "foreignKey": "id_encuesta"
       },
       "localizacion": {
-        "type": "hasMany",
+        "type": "belongsTo",
         "model": "localizacion",
         "foreignKey": "id_localizacion"
       }

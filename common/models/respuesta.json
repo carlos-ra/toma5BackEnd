@@ -30,6 +30,16 @@
         "type": "belongsTo",
         "model": "pregunta",
         "foreignKey": "id_pregunta"
+      },
+      "item": {
+        "type": "belongsTo",
+        "model": "item_lista",
+        "foreignKey": "id_item"
+      },
+      "entrada": {
+        "type": "belongsTo",
+        "model": "entrada",
+        "foreignKey": "id_entrada"
       }
     },  
     "acls": [

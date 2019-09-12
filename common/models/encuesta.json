@@ -21,7 +21,7 @@
       "preguntas": {
         "type": "hasMany",
         "model": "pregunta",
-        "foreignKey": "id_pregunta"
+        "foreignKey": "id_encuesta"
       }
     },
     "acls": [

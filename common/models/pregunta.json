@@ -38,7 +38,7 @@
     },
     "validations": [],
     "relations": {
-      "item_lista": {
+      "items": {
         "type": "hasMany",
         "model": "item_lista",
         "foreignKey": "id_pregunta"

@@ -15,7 +15,8 @@
       "localizacion",
       "respuesta",
       "roles",
-      "users"
+      "users",
+      "unidad_negocio"
     ],
     "fixtures": "./test/fixtures/"
   }
